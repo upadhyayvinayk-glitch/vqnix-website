@@ -351,3 +351,31 @@ a {
   margin: 30px auto;
   max-width: 600px;
 }
+/* ================= ENQUIRY FORM ================= */
+
+.enquiry-form {
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+.enquiry-form label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  outline: none;
+  border-color: #4f6cff;
+}
