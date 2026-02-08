@@ -34,28 +34,25 @@ a {
   padding: 0 20px;
 }
 
-/* ======================================================
-   GLOBAL HEADER & NAVBAR – VQNIX
-   ====================================================== */
+/* =========================================================
+   HEADER & NAVBAR
+========================================================= */
 
 .site-header {
-  background-color: #0f1f3d;   /* deep engineering blue */
+  background-color: #0f1f3d;
   width: 100%;
   position: relative;
   z-index: 1000;
 }
 
-/* container inside header */
 .site-header .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 16px 20px;
 }
 
-/* ---------------- BRAND ---------------- */
+/* BRAND */
 
 .brand {
   display: flex;
@@ -66,17 +63,15 @@ a {
 .brand-logo {
   height: 44px;
   width: auto;
-  display: block;
 }
 
 .brand-text {
   font-size: 14px;
   color: #dbe4ff;
-  font-weight: 400;
   white-space: nowrap;
 }
 
-/* ---------------- NAVIGATION ---------------- */
+/* NAV */
 
 .nav {
   display: flex;
@@ -88,7 +83,6 @@ a {
   color: #dbe4ff;
   font-size: 15px;
   font-weight: 500;
-  text-decoration: none;
   padding-bottom: 4px;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
@@ -99,32 +93,8 @@ a {
   border-bottom: 2px solid #5b7cff;
 }
 
-/* ---------------- MOBILE ---------------- */
-
-@media (max-width: 768px) {
-
-  .site-header .container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .brand-text {
-    font-size: 13px;
-  }
-
-  .nav {
-    width: 100%;
-    gap: 18px;
-  }
-
-  .nav a {
-    font-size: 14px;
-  }
-}
-
 /* =========================================================
-   HERO (HOME PAGE)
+   HERO
 ========================================================= */
 
 .hero {
@@ -137,6 +107,7 @@ a {
   max-width: 720px;
 }
 
+.hero h1,
 .hero h2 {
   font-size: 44px;
   line-height: 1.2;
@@ -147,44 +118,6 @@ a {
   font-size: 17px;
   color: #dbe4ff;
   margin-bottom: 30px;
-}
-
-/* =========================================================
-   PAGE HERO (PRODUCT PAGES)
-========================================================= */
-
-.page-hero {
-  background: linear-gradient(135deg, #142b5c, #2f4fa0);
-  color: #ffffff;
-  padding: 70px 0;
-}
-
-.page-hero h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.page-hero p {
-  max-width: 760px;
-  color: #dbe4ff;
-}
-
-/* =========================================================
-   BUTTONS
-========================================================= */
-
-.btn-primary {
-  display: inline-block;
-  background: #4f6cff;
-  color: #ffffff;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: background 0.2s ease;
-}
-
-.btn-primary:hover {
-  background: #3957e6;
 }
 
 /* =========================================================
@@ -207,7 +140,25 @@ a {
 }
 
 /* =========================================================
-   PRODUCT GRID (HOME / PRODUCTS PAGE)
+   BUTTONS
+========================================================= */
+
+.btn-primary {
+  display: inline-block;
+  background: #4f6cff;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #3957e6;
+}
+
+/* =========================================================
+   PRODUCT GRID (HOME)
 ========================================================= */
 
 .product-grid {
@@ -259,7 +210,26 @@ a {
 }
 
 /* =========================================================
-   PRODUCT DETAIL PAGE LAYOUT
+   PRODUCT LIST PAGE
+========================================================= */
+
+.product-card {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.product-card .product-image {
+  height: auto;
+  max-width: 220px;
+}
+
+.product-text h3 {
+  margin-bottom: 8px;
+}
+
+/* =========================================================
+   PRODUCT DETAIL PAGE
 ========================================================= */
 
 .product-layout {
@@ -279,17 +249,12 @@ a {
 }
 
 .product-image-box img {
-  width: 100%;
   max-height: 260px;
   object-fit: contain;
 }
 
 .product-content {
   flex: 2 1 420px;
-}
-
-.product-content h2 {
-  margin-bottom: 15px;
 }
 
 .product-content h3 {
@@ -301,7 +266,6 @@ a {
 ========================================================= */
 
 .feature-list {
-  margin-top: 10px;
   padding-left: 18px;
 }
 
@@ -310,53 +274,9 @@ a {
 }
 
 /* =========================================================
-   FOOTER
+   CONTACT & FORM
 ========================================================= */
 
-.footer {
-  background: #0f1f3d;
-  color: #c7d2fe;
-  text-align: center;
-  padding: 36px 0;
-  font-size: 14px;
-}
-
-.footer-tag {
-  margin-top: 6px;
-  color: #9fb0ff;
-}
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
-@media (max-width: 768px) {
-
-  .header-flex {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .nav {
-    gap: 18px;
-  }
-
-  .hero h2 {
-    font-size: 32px;
-  }
-
-  .page-hero h1 {
-    font-size: 30px;
-  }
-
-  .product-layout {
-    flex-direction: column;
-  }
-
-  .product-image-box {
-    max-width: 100%;
-  }
-}
 #contact a {
   color: #4f6cff;
   font-weight: 500;
@@ -365,32 +285,6 @@ a {
 #contact a:hover {
   text-decoration: underline;
 }
-/* ================= LINKEDIN CTA ================= */
-
-.linkedin-cta {
-  margin-top: 20px;
-}
-
-.btn-linkedin {
-  display: inline-block;
-  background: #0a66c2;   /* LinkedIn official blue */
-  color: #ffffff;
-  padding: 12px 22px;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: background 0.2s ease;
-}
-
-.btn-linkedin:hover {
-  background: #004182;
-}
-/* ================= LINKEDIN POSTS ================= */
-
-.linkedin-post {
-  margin: 30px auto;
-  max-width: 600px;
-}
-/* ================= ENQUIRY FORM ================= */
 
 .enquiry-form {
   max-width: 500px;
@@ -417,4 +311,82 @@ a {
 .enquiry-form textarea:focus {
   outline: none;
   border-color: #4f6cff;
+}
+
+/* =========================================================
+   LINKEDIN
+========================================================= */
+
+.linkedin-cta {
+  margin-top: 20px;
+}
+
+.btn-linkedin {
+  background: #0a66c2;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.btn-linkedin:hover {
+  background: #004182;
+}
+
+.linkedin-post {
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  background: #0f1f3d;
+  color: #c7d2fe;
+  text-align: center;
+  padding: 36px 0;
+  font-size: 14px;
+}
+
+.footer-tag {
+  margin-top: 6px;
+  color: #9fb0ff;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav {
+    width: 100%;
+    gap: 18px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .product-layout,
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-card .product-image {
+    max-width: 100%;
+  }
 }
