@@ -39,9 +39,12 @@ a {
 ========================================================= */
 
 .header {
-  background: #0f1f3d;
+  background: #0f1f3d;      /* solid dark blue */
   padding: 22px 0;
+  position: relative;
+  z-index: 1000;
 }
+
 
 .header-flex {
   display: flex;
