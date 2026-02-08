@@ -156,14 +156,24 @@
     </div>
 
     <!-- Enquiry Form (Netlify) -->
-    <form name="vqnix-enquiry"
-          method="POST"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          action="/thank-you.html"
-          class="enquiry-form">
+   <form name="vqnix-enquiry"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      class="enquiry-form">
 
-      <input type="hidden" name="form-name" value="vqnix-enquiry">
+  <input type="hidden" name="form-name" value="vqnix-enquiry">
+
+  <!-- THIS LINE HANDLES REDIRECT -->
+  <input type="hidden" name="redirect" value="/thank-you.html">
+
+  <p style="display:none">
+    <label>Don’t fill this out <input name="bot-field"></label>
+  </p>
+
+  <!-- form fields -->
+</form>
+
 
       <!-- honeypot -->
       <p style="display:none">
