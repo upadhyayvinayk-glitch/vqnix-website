@@ -22,3 +22,12 @@
   padding: 12px;
   background: #ffffff;
 }
+.product-list {
+  list-style: square;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.product-list li {
+  margin-bottom: 6px;
+}
