@@ -1,57 +1,197 @@
-.block-diagram-section {
-  margin: 60px auto;
-  max-width: 1000px;
-  padding: 20px;
+/* ================= BASE ================= */
+
+* {
+  box-sizing: border-box;
 }
 
-.block-diagram-section h2 {
-  margin-bottom: 10px;
-  font-size: 26px;
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.7;
+  color: #1f2937;
+  background: #f8fafc;
 }
 
-.block-diagram-section p {
-  margin-bottom: 20px;
-  color: #444;
-  line-height: 1.6;
+/* ================= CONTAINER ================= */
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-.block-diagram-image {
-  width: 100%;
-  max-width: 900px;
-  border: 1px solid #ddd;
-  padding: 12px;
-  background: #ffffff;
-}
-.product-list {
-  list-style: square;
-  padding-left: 20px;
-  margin-bottom: 30px;
+/* ================= TYPOGRAPHY ================= */
+
+h1, h2, h3, h4 {
+  color: #0f172a;
+  font-weight: 600;
+  margin-top: 0;
 }
 
-.product-list li {
-  margin-bottom: 6px;
+h2 {
+  font-size: 2.1rem;
+  margin-bottom: 16px;
 }
-.product-card {
+
+h3 {
+  font-size: 1.45rem;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 14px;
+  font-size: 1rem;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  background: #0b1220;
+  color: #ffffff;
+  padding: 28px 0;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.tagline {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  color: #9aa4b2;
+}
+
+/* ================= NAV ================= */
+
+.nav {
+  list-style: none;
+  padding: 0;
   display: flex;
   gap: 24px;
+  margin-top: 16px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #ffffff;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  padding: 90px 0;
+  background: linear-gradient(135deg, #0b1220, #162040);
+  color: #ffffff;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  max-width: 720px;
+}
+
+.hero p {
+  max-width: 760px;
+  color: #d1d9e6;
+}
+
+/* ================= SECTIONS ================= */
+
+.section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.section.gray {
+  background: #f1f5f9;
+}
+
+/* ================= FEATURE LIST ================= */
+
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feature-list li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+}
+
+.feature-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* ================= PRODUCT CARD ================= */
+
+.product-card {
+  display: flex;
+  gap: 32px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
   margin: 40px 0;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .product-card img {
-  width: 100%;
   max-width: 320px;
-  border: 1px solid #ccc;
-  padding: 8px;
-  background: #fff;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
 }
 
-.product-card .product-text {
+.product-text {
   flex: 1;
 }
 
-.product-card h4 {
-  margin-top: 0;
+.product-text a {
+  color: #0f172a;
+  text-decoration: none;
 }
 
+.product-text a:hover {
+  text-decoration: underline;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #0b1220;
+  color: #9aa4b2;
+  text-align: center;
+  padding: 28px 0;
+  font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .product-card {
+    padding: 22px;
+  }
+}
