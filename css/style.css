@@ -62,23 +62,17 @@ a {
 .brand-logo {
   height: 44px;
   width: auto;
+  filter: brightness(0) invert(1);   /* makes logo white */
 }
+
 
 .tagline {
   font-size: 14px;
-  color: #c7d2fe;
-}
-
-.nav {
-  list-style: none;
-  display: flex;
-  gap: 26px;
+  color: #e0e7ff;   /* brighter for visibility */
 }
 
 .nav a {
-  color: #dbe3ff;
-  font-weight: 500;
-  padding-bottom: 4px;
+  color: #e5edff;
 }
 
 .nav a:hover,
@@ -86,6 +80,11 @@ a {
   color: #ffffff;
   border-bottom: 2px solid #5b7cff;
 }
+.brand {
+  position: relative;
+  z-index: 1100;
+}
+
 
 /* =========================================================
    HERO (HOME PAGE)
