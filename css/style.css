@@ -326,3 +326,22 @@ a {
 #contact a:hover {
   text-decoration: underline;
 }
+/* ================= LINKEDIN CTA ================= */
+
+.linkedin-cta {
+  margin-top: 20px;
+}
+
+.btn-linkedin {
+  display: inline-block;
+  background: #0a66c2;   /* LinkedIn official blue */
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.btn-linkedin:hover {
+  background: #004182;
+}
