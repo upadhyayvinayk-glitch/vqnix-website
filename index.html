@@ -6,7 +6,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-        content="VQNIX designs advanced power electronics for real-world applications." />
+        content="VQNIX designs power electronics systems including inverters, solar hybrid PCUs, MPPT platforms, EV chargers, and static voltage stabilizers engineered for real-world grids." />
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,19 +18,14 @@
   <div class="container header-flex">
 
     <div class="brand">
-  <img src="images/vqnix-logo.png"
-       alt="VQNIX Logo"
-       class="brand-logo">
-
-  <p class="tagline">Engineering Reliable Power Systems</p>
-</div>
-
+      <img src="images/vqnix-logo.png" alt="VQNIX Logo" class="brand-logo">
+      <p class="tagline">Engineering Reliable Power Systems</p>
+    </div>
 
     <nav>
       <ul class="nav">
-        <li><a href="#" class="active">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="products.html">Products</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -41,42 +36,34 @@
 <!-- ================= HERO ================= -->
 <section class="hero">
   <div class="container hero-content">
-
-    <h2>Advanced Power Electronics<br>for Real-World Applications</h2>
-
+    <h2>Advanced Power Electronics for Real-World Grids</h2>
     <p>
-      Innovative inverter platforms, solar hybrid PCUs, EV chargers,
-      grid-tie inverters, and voltage stabilizers engineered for
-      reliability and performance.
+      VQNIX engineers inverter, solar, EV charging, and power-control
+      platforms designed for unstable grids, dynamic loads,
+      and long-term field reliability.
     </p>
-
-    <a href="products.html" class="btn-primary">Learn More</a>
-
+    <a href="products.html" class="btn-primary">Explore Products</a>
   </div>
 </section>
 
 <!-- ================= ABOUT ================= -->
-<section id="about" class="section">
+<section class="section">
   <div class="container">
 
     <h2 class="section-title">About VQNIX</h2>
 
     <p>
-      VQNIX is a technology-driven company focused on the design and
-      development of power-electronic systems for real-world
-      electrical environments.
-    </p>
-
-    <p>
+      VQNIX is a technology-driven company focused on the design and development
+      of power-electronic systems for real-world electrical environments.
       We specialize in inverters, solar hybrid PCUs, MPPT platforms,
-      EV chargers, grid-tie inverters, and static voltage stabilizers,
-      with strong emphasis on design ownership and engineering depth.
+      EV chargers, grid-tie inverters, and static voltage stabilizers.
     </p>
 
     <p>
-      We own the complete engineering lifecycle — from power-stage
-      architecture and control algorithms to PCB layout, EMI,
-      thermal behavior, and long-term field reliability.
+      Unlike solutions built from reference designs or integration kits,
+      VQNIX owns the complete engineering lifecycle — from power-stage
+      architecture and control algorithms to PCB layout, EMI behavior,
+      thermal performance, and long-term field reliability.
     </p>
 
   </div>
@@ -86,32 +73,44 @@
 <section class="section gray">
   <div class="container">
 
-    <h2 class="section-title">Our Products</h2>
+    <h2 class="section-title">Our Product Platforms</h2>
 
     <div class="product-grid">
 
-      <!-- Card 1 -->
       <div class="product-box">
-        <img src="images/inverter-1kva-12v.jpg" alt="Inverter">
+        <div class="product-image">
+          <img src="images/inverter-1kva-12v.jpg" alt="Low Voltage Inverters">
+        </div>
         <h3>Low-Voltage Inverters</h3>
-        <p>High-current inverter platforms for backup and hybrid systems.</p>
+        <p>12V, 24V, and 48V inverter platforms engineered for high-current operation.</p>
         <a href="products/inverter-platforms.html">Learn More →</a>
       </div>
 
-      <!-- Card 2 -->
       <div class="product-box">
-        <img src="images/solar-hybrid-pcu.jpg" alt="Hybrid PCU">
+        <div class="product-image">
+          <img src="images/solar-hybrid-pcu.jpg" alt="Solar Hybrid PCU">
+        </div>
         <h3>Solar Hybrid PCU</h3>
-        <p>Integrated solar, battery, and grid power management.</p>
+        <p>Integrated solar, battery, and grid power management systems.</p>
         <a href="products/solar-hybrid-pcu.html">Learn More →</a>
       </div>
 
-      <!-- Card 3 -->
       <div class="product-box">
-        <img src="images/mppt-board.jpg" alt="MPPT">
+        <div class="product-image">
+          <img src="images/mppt-board.jpg" alt="MPPT Platforms">
+        </div>
         <h3>MPPT Platforms</h3>
-        <p>High-efficiency MPPT controllers for energy systems.</p>
+        <p>High-efficiency MPPT control platforms for solar energy systems.</p>
         <a href="products/mppt-platforms.html">Learn More →</a>
+      </div>
+
+      <div class="product-box">
+        <div class="product-image">
+          <img src="images/ev-charger.jpg" alt="EV Chargers">
+        </div>
+        <h3>EV Chargers</h3>
+        <p>LLC and PFC+LLC based EV charging solutions.</p>
+        <a href="products/ev-chargers.html">Learn More →</a>
       </div>
 
     </div>
@@ -120,7 +119,7 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="section gray">
+<section id="contact" class="section">
   <div class="container">
 
     <h2 class="section-title">Contact VQNIX</h2>
@@ -134,32 +133,6 @@
       📧 <strong>Email:</strong>
       <a href="mailto:info@vqnix.com">info@vqnix.com</a>
     </p>
-<form name="vqnix-enquiry"
-      method="POST"
-      data-netlify="true"
-      class="enquiry-form">
-
-  <input type="hidden" name="form-name" value="vqnix-enquiry">
-
-  <label>
-    Name
-    <input type="text" name="name" required>
-  </label>
-
-  <label>
-    Email
-    <input type="email" name="email" required>
-  </label>
-
-  <label>
-    Message
-    <textarea name="message" rows="4" required></textarea>
-  </label>
-
-  <button type="submit" class="btn-primary">
-    Submit Enquiry
-  </button>
-</form>
 
     <p>
       🌍 <strong>Location:</strong> India
@@ -168,38 +141,62 @@
     <p>
       🔗 <strong>LinkedIn:</strong>
       <a href="https://www.linkedin.com/company/vqnix/"
-        <div class="linkedin-cta">
-  <a href="https://www.linkedin.com/company/vqnix/"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="btn-linkedin">
-    Follow VQNIX on LinkedIn
-  </a>
-</div>
+         target="_blank" rel="noopener noreferrer">
+        VQNIX Company Page
+      </a>
+    </p>
 
+    <!-- LinkedIn CTA -->
+    <div class="linkedin-cta">
+      <a href="https://www.linkedin.com/company/vqnix/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn-linkedin">
+        Follow VQNIX on LinkedIn
+      </a>
+    </div>
+
+    <!-- Enquiry Form (Netlify) -->
+    <form name="vqnix-enquiry"
+          method="POST"
+          data-netlify="true"
+          class="enquiry-form">
+
+      <input type="hidden" name="form-name" value="vqnix-enquiry">
+
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+
+      <button type="submit" class="btn-primary">
+        Submit Enquiry
+      </button>
+    </form>
+
+  </div>
 </section>
-<section class="section">
+
+<!-- ================= LINKEDIN POST ================= -->
+<section class="section gray">
   <div class="container">
 
     <h2 class="section-title">Latest from LinkedIn</h2>
 
-    <!-- LinkedIn Post 1 -->
     <div class="linkedin-post">
       <iframe
-        src="https://www.linkedin.com/embed/feed/update/urn:li:share:POST_ID_1"
-        height="480"
-        width="100%"
-        frameborder="0"
-        allowfullscreen
-        title="VQNIX LinkedIn Post">
-      </iframe>
-    </div>
-
-    <!-- LinkedIn Post 2 -->
-    <div class="linkedin-post">
-      <iframe
-        src="https://www.linkedin.com/embed/feed/update/urn:li:share:POST_ID_2"
-        height="480"
+        src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7425865638889406465"
+        height="520"
         width="100%"
         frameborder="0"
         allowfullscreen
@@ -212,10 +209,8 @@
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
-
   <p>© 2026 VQNIX. All rights reserved.</p>
-  <p class="footer-tag">Driving Innovation in Power Electronics</p>
-
+  <p class="footer-tag">Engineering Reliable Power Systems</p>
 </footer>
 
 </body>
