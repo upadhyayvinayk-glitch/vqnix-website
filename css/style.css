@@ -345,3 +345,9 @@ a {
 .btn-linkedin:hover {
   background: #004182;
 }
+/* ================= LINKEDIN POSTS ================= */
+
+.linkedin-post {
+  margin: 30px auto;
+  max-width: 600px;
+}
