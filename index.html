@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>VQNIX | Engineering Reliable Power Systems</title>
@@ -15,7 +16,7 @@
 
 <!-- ================= HEADER ================= -->
 <header class="site-header">
-  <div class="container header-flex">
+  <div class="container">
 
     <div class="brand">
       <img src="images/vqnix-logo.png" class="brand-logo" alt="VQNIX">
@@ -23,9 +24,9 @@
     </div>
 
     <nav class="nav">
-      <a href="/">Home</a>
+      <a href="/" class="active">Home</a>
       <a href="/products.html">Products</a>
-      <a href="/contact.html">Contact</a>
+      <a href="/#contact">Contact</a>
     </nav>
 
   </div>
@@ -34,13 +35,13 @@
 <!-- ================= HERO ================= -->
 <section class="hero">
   <div class="container hero-content">
-    <h2>Advanced Power Electronics for Real-World Grids</h2>
+    <h1>Advanced Power Electronics for Real-World Grids</h1>
     <p>
       VQNIX engineers inverter, solar, EV charging, and power-control
       platforms designed for unstable grids, dynamic loads,
       and long-term field reliability.
     </p>
-    <a href="products.html" class="btn-primary">Explore Products</a>
+    <a href="/products.html" class="btn-primary">Explore Products</a>
   </div>
 </section>
 
@@ -81,7 +82,7 @@
         </div>
         <h3>Low-Voltage Inverters</h3>
         <p>12V, 24V, and 48V inverter platforms engineered for high-current operation.</p>
-        <a href="products/inverter-platforms.html">Learn More →</a>
+        <a href="/products/inverter-platforms.html">Learn More →</a>
       </div>
 
       <div class="product-box">
@@ -90,7 +91,7 @@
         </div>
         <h3>Solar Hybrid PCU</h3>
         <p>Integrated solar, battery, and grid power management systems.</p>
-        <a href="products/solar-hybrid-pcu.html">Learn More →</a>
+        <a href="/products/solar-hybrid-pcu.html">Learn More →</a>
       </div>
 
       <div class="product-box">
@@ -99,7 +100,7 @@
         </div>
         <h3>MPPT Platforms</h3>
         <p>High-efficiency MPPT control platforms for solar energy systems.</p>
-        <a href="products/mppt-platforms.html">Learn More →</a>
+        <a href="/products/mppt-platforms.html">Learn More →</a>
       </div>
 
       <div class="product-box">
@@ -108,7 +109,7 @@
         </div>
         <h3>EV Chargers</h3>
         <p>LLC and PFC+LLC based EV charging solutions.</p>
-        <a href="products/ev-chargers.html">Learn More →</a>
+        <a href="/products/ev-chargers.html">Learn More →</a>
       </div>
 
     </div>
@@ -155,13 +156,19 @@
     </div>
 
     <!-- Enquiry Form (Netlify) -->
-   <form name="vqnix-enquiry"
-      method="POST"
-      data-netlify="true"
-      action="/thank-you.html"
-      class="enquiry-form">
-<input type="hidden" name="form-name" value="vqnix-enquiry">
+    <form name="vqnix-enquiry"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thank-you.html"
+          class="enquiry-form">
 
+      <input type="hidden" name="form-name" value="vqnix-enquiry">
+
+      <!-- honeypot -->
+      <p style="display:none">
+        <label>Don’t fill this out <input name="bot-field"></label>
+      </p>
 
       <label>
         Name
@@ -181,6 +188,7 @@
       <button type="submit" class="btn-primary">
         Submit Enquiry
       </button>
+
     </form>
 
   </div>
