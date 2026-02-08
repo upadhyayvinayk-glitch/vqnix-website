@@ -1,161 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>VQNIX | Engineering Reliable Power Systems</title>
+/* ========== RESET ========== */
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-        content="VQNIX designs power-electronic systems engineered for real-world grids, dynamic loads, and long-term reliability." />
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <link rel="stylesheet" href="css/style.css">
-</head>
+/* ========== BASE ========== */
 
-<body>
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #1e293b;
+  background: #f8fafc;
+}
 
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="container">
-    <h1 class="logo">VQNIX</h1>
-    <p class="tagline">Engineering Reliable Power Systems</p>
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 20px;
+}
 
-    <nav>
-      <ul class="nav">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="#engineering">Engineering</a></li>
-        <li><a href="#why">Why VQNIX</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+/* ========== HEADER ========== */
 
-<!-- ================= HERO ================= -->
-<section class="hero hero-image">
-  <div class="container">
-    <h2>Power Electronics Designed for Real-World Grids</h2>
-    <p>
-      VQNIX engineers inverter, solar, EV charging, and power-control platforms
-      built to operate reliably under unstable grids, dynamic loads,
-      and long-term field conditions.
-    </p>
-  </div>
-</section>
+.header {
+  background: #0f1f3d;
+  padding: 25px 0;
+}
 
-<!-- ================= ABOUT ================= -->
-<section class="section">
-  <div class="container">
-    <h2>About VQNIX</h2>
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-    <p>
-      VQNIX is a technology-driven company focused on the design and development
-      of power-electronic systems for real-world electrical environments.
-      We specialize in inverters, solar hybrid PCUs, MPPT platforms,
-      EV chargers, grid-tie inverters, and static voltage stabilizers.
-    </p>
+.logo {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
 
-    <p>
-      Unlike products built around reference designs or integration kits,
-      VQNIX owns the complete engineering lifecycle — from power-stage
-      architecture and control algorithms to PCB layout, thermal behavior,
-      EMI performance, and long-term field reliability.
-    </p>
-  </div>
-</section>
+.tagline {
+  color: #b6c3e0;
+  font-size: 14px;
+}
 
-<!-- ================= ENGINEERING ================= -->
-<section id="engineering" class="section gray">
-  <div class="container">
-    <h2>Engineering at VQNIX</h2>
+/* ========== NAV ========== */
 
-    <ul class="feature-list">
-      <li>In-house design of power stages, control algorithms, and PCB layouts</li>
-      <li>Deep focus on grid interaction, EMI, thermal behavior, and protection</li>
-      <li>Platforms engineered for worst-case grids and dynamic loads</li>
-      <li>Ability to debug, adapt, and evolve designs over their lifecycle</li>
-    </ul>
-  </div>
-</section>
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
 
-<!-- ================= PRODUCT PLATFORMS ================= -->
-<section class="section">
-  <div class="container">
-    <h2>Our Product Platforms</h2>
+.nav a {
+  color: #dbe3ff;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-    <div class="product-card">
-      <img src="images/inverter-1kva-12v.jpg" alt="Low Voltage Inverters">
-      <div class="product-text">
-        <h3><a href="products/inverter-platforms.html">Low-Voltage Inverter Platforms</a></h3>
-        <p>
-          12V, 24V, and 48V inverter architectures designed for
-          high current stress, surge handling, and continuous operation.
-        </p>
-      </div>
-    </div>
+.nav a:hover,
+.nav a.active {
+  color: #fff;
+  border-bottom: 2px solid #5b7cff;
+}
 
-    <div class="product-card">
-      <img src="images/solar-hybrid-pcu.jpg" alt="Solar Hybrid PCU">
-      <div class="product-text">
-        <h3><a href="products/solar-hybrid-pcu.html">Solar Hybrid PCU Platforms</a></h3>
-        <p>
-          Intelligent power-management systems coordinating solar,
-          battery, grid, and load under continuously changing conditions.
-        </p>
-      </div>
-    </div>
+/* ========== HERO ========== */
 
-    <div class="product-card">
-      <img src="images/mppt-board.jpg" alt="MPPT Platforms">
-      <div class="product-text">
-        <h3><a href="products/mppt-platforms.html">MPPT Control Platforms</a></h3>
-        <p>
-          Low-voltage and high-voltage MPPT platforms engineered
-          for stable operation across wide solar input ranges.
-        </p>
-      </div>
-    </div>
+.hero {
+  background: linear-gradient(135deg, #142b5c, #2f4fa0);
+  color: white;
+  padding: 120px 0;
+}
 
-    <div class="product-card">
-      <img src="images/static-stabilizer.jpg" alt="Static Voltage Stabilizer">
-      <div class="product-text">
-        <h3><a href="products/static-voltage-stabilizer.html">Static Voltage Stabilizers</a></h3>
-        <p>
-          IGBT-based static stabilizers delivering electronic-speed
-          voltage correction for modern industrial and critical loads.
-        </p>
-      </div>
-    </div>
+.hero-content {
+  max-width: 650px;
+}
 
-  </div>
-</section>
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
 
-<!-- ================= WHY VQNIX ================= -->
-<section id="why" class="section gray">
-  <div class="container">
-    <h2>Why VQNIX</h2>
+.hero p {
+  font-size: 17px;
+  margin-bottom: 30px;
+  color: #dbe4ff;
+}
 
-    <p>
-      Reliable power systems are not assembled — they are engineered.
-      VQNIX focuses on predictable behavior under real operating conditions,
-      not just nominal ratings or datasheet specifications.
-    </p>
-  </div>
-</section>
+/* ========== BUTTON ========== */
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Email: <strong>info@vqnix.com</strong></p>
-    <p>Location: India</p>
-  </div>
-</section>
+.btn-primary {
+  display: inline-block;
+  background: #4f6cff;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p>© 2026 VQNIX. All rights reserved.</p>
-</footer>
+.btn-primary:hover {
+  background: #3957e6;
+}
 
-</body>
-</html>
+/* ========== SECTIONS ========== */
+
+.section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.section.gray {
+  background: #f1f5f9;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+/* ========== PRODUCTS ========== */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+}
+
+.product-box img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.product-box h3 {
+  margin-bottom: 10px;
+}
+
+.product-box p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.product-box a {
+  color: #4f6cff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.product-box a:hover {
+  text-decoration: underline;
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+  background: #0f1f3d;
+  color: #c7d2fe;
+  text-align: center;
+  padding: 35px 0;
+  font-size: 14px;
+}
+
+.footer-tag {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #9fb0ff;
+}
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 768px) {
+
+  .header-flex {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+}
