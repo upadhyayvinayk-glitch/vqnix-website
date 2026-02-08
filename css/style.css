@@ -34,24 +34,28 @@ a {
   padding: 0 20px;
 }
 
-/* =========================================================
-   HEADER & NAVBAR
-========================================================= */
+/* ======================================================
+   GLOBAL HEADER & NAVBAR – VQNIX
+   ====================================================== */
 
-.header {
-  background: #0f1f3d;      /* solid dark blue */
-  padding: 22px 0;
+.site-header {
+  background-color: #0f1f3d;   /* deep engineering blue */
+  width: 100%;
   position: relative;
   z-index: 1000;
 }
 
-
-.header-flex {
+/* container inside header */
+.site-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
+
+/* ---------------- BRAND ---------------- */
 
 .brand {
   display: flex;
@@ -62,17 +66,31 @@ a {
 .brand-logo {
   height: 44px;
   width: auto;
-  filter: brightness(0) invert(1);   /* makes logo white */
+  display: block;
 }
 
-
-.tagline {
+.brand-text {
   font-size: 14px;
-  color: #e0e7ff;   /* brighter for visibility */
+  color: #dbe4ff;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
 .nav a {
-  color: #e5edff;
+  color: #dbe4ff;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .nav a:hover,
@@ -80,11 +98,30 @@ a {
   color: #ffffff;
   border-bottom: 2px solid #5b7cff;
 }
-.brand {
-  position: relative;
-  z-index: 1100;
-}
 
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 768px) {
+
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .brand-text {
+    font-size: 13px;
+  }
+
+  .nav {
+    width: 100%;
+    gap: 18px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+}
 
 /* =========================================================
    HERO (HOME PAGE)
